@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="N_Config">ApexGram</string>
+    <string name="N_Config">Nox</string>
     <string name="ForceCopy">Tving kopi</string>
     <string name="disableSecondAddress">Deaktiver annenstedsforespørsel</string>
     <string name="InvertReply">Invert</string>
@@ -22,7 +22,7 @@
     <string name="SendReactions">Send reaksjoner</string>
     <string name="ShowReactions">Vis Reaksjoner</string>
     <string name="CustomTitle">Tilpasset tittel</string>
-    <string name="CustomTitleHint">La stå tomt for å bruke ApexGram</string>
+    <string name="CustomTitleHint">La stå tomt for å bruke Nox</string>
     <string name="CodeSyntaxHighlight">Fremheving av kode syntaks</string>
     <string name="CreateMono">Opprett monospace</string>
     <string name="CreateMonoLanguage">Kode språk</string>

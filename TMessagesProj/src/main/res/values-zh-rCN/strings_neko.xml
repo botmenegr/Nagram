@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">ApexGram</string>
+    <string name="NekoSettings">Nox</string>
     <string name="IPv6">通过 IPv6 连接</string>
     <string name="MessageMenu">消息菜单</string>
     <string name="HidePhone">隐藏您的手机号码</string>
@@ -232,7 +232,7 @@
     <string name="PassQRNewPassword">使用密码保护此二维码</string>
     <string name="ConfirmNewPassword">确认密码</string>
     <string name="PassQRAbout">将您的通行密钥保存为加密的二维码。扫描它即可在其他设备上登录。</string>
-    <string name="PassQREncryption">使用 ApexGram 扫描以登录。</string>
+    <string name="PassQREncryption">使用 Nox 扫描以登录。</string>
     <string name="InvalidPassQr">无效的通行密钥二维码</string>
     <string name="PassQRPasswordTooShort">密码至少需要 8 个字符</string>
     <string name="PassQRPasswordWarning">安全警告：此密码是保护您密钥的唯一防线。弱密码可被离线破解，请混合使用大写字母、小写字母、数字和符号。</string>

@@ -47,7 +47,7 @@
     <string name="TransToLang">翻訳対象言語</string>
     <string name="TransInputToLang">翻訳入力対象言語</string>
     <string name="More">もっと見る</string>
-    <string name="NekoXUpdatesChannel">ApexGram アップデートチャンネル</string>
+    <string name="NekoXUpdatesChannel">Nox アップデートチャンネル</string>
     <string name="ShowIdAndDc">プロファイルにID / DCを表示</string>
     <string name="UseDefaultTheme">デフォルトテーマを使用 *</string>
     <string name="NightMode">夜間モード</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">ミュートなしで並べ替え</string>
     <string name="SortByUser">ユーザーで並べ替え</string>
     <string name="SortByContacts">連絡先で並べ替え</string>
-    <string name="NekoXPushService">ApexGram プッシュサービス</string>
+    <string name="NekoXPushService">Nox プッシュサービス</string>
     <string name="EnablePushAlert">\"NekoX プッシュサービス\"を有効にしてください</string>
     <string name="DisablePushAlert">\"NekoX プッシュサービス\"を無効にしてください</string>
     <string name="DisableUndo">取り消しを無効にする</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">開発者モードを無効にする</string>
     <string name="DeveloperSettings">開発者設定</string>
     <string name="LoginSettings">ログイン設定</string>
-    <string name="NekoXFaq">ApexGram FAQ</string>
+    <string name="NekoXFaq">Nox FAQ</string>
     <string name="TransSite">プラットフォームを翻訳</string>
     <string name="OpenKayChain">OpenPGP クライアント</string>
     <string name="OpenPGPApp">OpenPGPプロバイダー</string>

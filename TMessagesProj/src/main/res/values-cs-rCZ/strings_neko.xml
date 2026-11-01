@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">ApexGram</string>
+    <string name="NekoSettings">Nox</string>
     <string name="IPv6">Připojení přes IPv6</string>
     <string name="MessageMenu">Nabídka zpráv</string>
     <string name="HidePhone">Skrýt moje číslo</string>
@@ -157,7 +157,7 @@
     <string name="enhancedFileLoader">Zvýšit rychlost nahrávání a stahování</string>
     <string name="mapDriftingFixForGoogleMaps">Opravit Google Maps uniftující v Číně</string>
     <string name="useOSMDroidMap">Použít OSMDroid mapu</string>
-    <string name="UnknownNekoSettingsOption">Žádná taková volba ApexGram neexistuje.</string>
+    <string name="UnknownNekoSettingsOption">Žádná taková volba Nox neexistuje.</string>
     <string name="PasscodeNeeded">Nejprve musíte povolit PIN zámek</string>
     <string name="PasscodeNeko">Passcode</string>
     <string name="PasscodeShowInSettings">Zobrazit v nastavení N-</string>
@@ -204,7 +204,7 @@
     <string name="ClearRecentChats">Vymazat nedávné chaty</string>
     <string name="ClearRecentChatAlert">Chcete vymazat své nedávné chaty?</string>
     <string name="CloudConfig">Nastavení Cloudu</string>
-    <string name="CloudConfigDesc">Uložte svůj ApexGram do Telegram cloudu.</string>
+    <string name="CloudConfigDesc">Uložte svůj Nox do Telegram cloudu.</string>
     <string name="CloudConfigSyncDate">Poslední synchronizace: %s, cloud: %s</string>
     <string name="CloudConfigSyncDateNever">nikdy</string>
     <string name="CloudConfigSync">Synchronizovat do cloudu</string>
@@ -213,7 +213,7 @@
     <string name="CloudConfigRestoreShort">Obnovit</string>
     <string name="CloudConfigSyncing">Synchronizace...</string>
     <string name="CloudConfigAutoSync">Automatická synchronizace</string>
-    <string name="CloudConfigAutoSyncDesc">Synchronizovat do cloudu automaticky po provedení změn v ApexGram.</string>
+    <string name="CloudConfigAutoSyncDesc">Synchronizovat do cloudu automaticky po provedení změn v Nox.</string>
     <string name="CloudConfigSyncFailed">Nepodařilo se synchronizovat nastavení do cloudu.</string>
     <string name="CloudConfigRestoreFailed">Nepodařilo se obnovit nastavení z cloudu.</string>
     <string name="CopyCallback">Kopírovat data zpětného volání</string>
@@ -232,7 +232,7 @@
     <string name="PassQRNewPassword">Chraňte tento QR kód heslem</string>
     <string name="ConfirmNewPassword">Potvrzení hesla</string>
     <string name="PassQRAbout">Uloží vaše heslo jako šifrovaný QR kód. Můžete jej naskenovat a přihlásit se na jiném zařízení.</string>
-    <string name="PassQREncryption">Naskenujte ApexGram pro přihlášení.</string>
+    <string name="PassQREncryption">Naskenujte Nox pro přihlášení.</string>
     <string name="InvalidPassQr">Invalid Passkey QR</string>
     <string name="PassQRPasswordTooShort">Heslo musí mít alespoň 8 znaků</string>
     <string name="PassQRPasswordWarning">Bezpečnostní varování: toto heslo je jediná věc, která chrání váš klíč. Slabé heslo může být roztrženo offline, takže se promísí velká velká a malá písmena, čísla a symboly.</string>

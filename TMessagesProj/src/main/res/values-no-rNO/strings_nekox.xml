@@ -47,7 +47,7 @@
     <string name="TransToLang">Oversettelsesmålspråk</string>
     <string name="TransInputToLang">Inndataspråk for oversettelse</string>
     <string name="More">Mer</string>
-    <string name="NekoXUpdatesChannel">ApexGram-oppdateringskanal</string>
+    <string name="NekoXUpdatesChannel">Nox-oppdateringskanal</string>
     <string name="ShowIdAndDc">Vis ID/DC i profil</string>
     <string name="UseDefaultTheme">Bruk forvalgt drakt *</string>
     <string name="NightMode">Nattmodus</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">Sorter etter ikke forstummet</string>
     <string name="SortByUser">Sorter etter bruker</string>
     <string name="SortByContacts">Sorter etter kontakter</string>
-    <string name="NekoXPushService">ApexGram-dyttingstjeneste</string>
+    <string name="NekoXPushService">Nox-dyttingstjeneste</string>
     <string name="EnablePushAlert">Skru på NekoX-dyttingstjenesten</string>
     <string name="DisablePushAlert">Skru av NekoX-dyttingstjenesten</string>
     <string name="DisableUndo">Skru av angring</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Skru av utviklingsmodus</string>
     <string name="DeveloperSettings">Utviklerinnstillinger</string>
     <string name="LoginSettings">Innloggingsinnstillinger</string>
-    <string name="NekoXFaq">ApexGram-O-S-S</string>
+    <string name="NekoXFaq">Nox-O-S-S</string>
     <string name="TransSite">Oversettelsesplattform</string>
     <string name="OpenKayChain">OpenPGP-klient</string>
     <string name="OpenPGPApp">OpenPGP-tilbyder</string>
@@ -267,7 +267,7 @@
     <string name="rememberAllBackMessages">Husk alle klikkede svar</string>
     <string name="DisableInstantCamera">Skru av umiddelbart kamera</string>
     <string name="showSeconds">Vis tidsstempel i sekuder</string>
-    <string name="AppUpdateNekoX">Oppgrader ApexGram</string>
+    <string name="AppUpdateNekoX">Oppgrader Nox</string>
     <string name="NekoXUpdateTranslationHint">Trykk for å oversette endringsloggen</string>
     <string name="Name">Navn</string>
     <string name="channelAlias">Kanalalias</string>

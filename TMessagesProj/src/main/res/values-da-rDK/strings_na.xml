@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="N_Config">ApexGram</string>
+    <string name="N_Config">Nox</string>
     <string name="ForceCopy">Gennemtving Kopiering</string>
     <string name="disableSecondAddress">Deaktivér Anden Adresseanmodning</string>
     <string name="InvertReply">Invert</string>
@@ -22,7 +22,7 @@
     <string name="SendReactions">Send Reaktioner</string>
     <string name="ShowReactions">Vis Reaktioner</string>
     <string name="CustomTitle">Brugerdefineret Titel</string>
-    <string name="CustomTitleHint">Lad feltet stå tomt for at bruge ApexGram</string>
+    <string name="CustomTitleHint">Lad feltet stå tomt for at bruge Nox</string>
     <string name="CodeSyntaxHighlight">Kode syntaksfremhævning</string>
     <string name="CreateMono">Opret Monospace</string>
     <string name="CreateMonoLanguage">Kode sprog</string>
@@ -95,7 +95,7 @@
     <string name="ShowForumAsNormalChat">Vis forum som normal chat</string>
     <string name="DecorationNone">Ingen</string>
     <string name="ChatDecoration">Chat Dekoration</string>
-    <string name="NeedChangeNekoSettings">Du skal ændre ApexGram</string>
+    <string name="NeedChangeNekoSettings">Du skal ændre Nox</string>
     <string name="DoNotUnarchiveBySwipe">Fjern ikke arkivering ved at stryge</string>
     <string name="DoNotShareMyPhoneNumber">Del ikke mit telefonnummer</string>
     <string name="DefaultDeleteMenu">Standard Slet Menu</string>

@@ -47,7 +47,7 @@
     <string name="TransToLang">Tujuan bahasa yang ingin di terjemahkan</string>
     <string name="TransInputToLang">Asal bahasa yang ingin di terjemahkan</string>
     <string name="More">Lainnya</string>
-    <string name="NekoXUpdatesChannel">Kanal Pembaruan ApexGram</string>
+    <string name="NekoXUpdatesChannel">Kanal Pembaruan Nox</string>
     <string name="ShowIdAndDc">Tampilkan ID / DC pada profil</string>
     <string name="UseDefaultTheme">Gunakan tema standar *</string>
     <string name="NightMode">Mode Malam</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">Urutkan sesuai pesan yang bersuara</string>
     <string name="SortByUser">Urutkan sesuai nama pengguna</string>
     <string name="SortByContacts">Urutkan sesuai nama pada kontak</string>
-    <string name="NekoXPushService">Layanan Push ApexGram</string>
+    <string name="NekoXPushService">Layanan Push Nox</string>
     <string name="EnablePushAlert">Mohon hidupkan \"Layanan Push NekoX\"</string>
     <string name="DisablePushAlert">Mohon matikan \"Layanan Push NekoX\"</string>
     <string name="DisableUndo">Matikan konfirmasi pembatalan ketika menghapus sebuah pesan</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Matikan Mode Pengembang</string>
     <string name="DeveloperSettings">Pengaturan Pengembang</string>
     <string name="LoginSettings">Pengaturan Login</string>
-    <string name="NekoXFaq">FAQ ApexGram</string>
+    <string name="NekoXFaq">FAQ Nox</string>
     <string name="TransSite">Platform Penterjemah</string>
     <string name="OpenKayChain">Klien OpenPGP</string>
     <string name="OpenPGPApp">Penyedia OpenPGP</string>
@@ -267,7 +267,7 @@
     <string name="rememberAllBackMessages">Ingat semua balasan yang diklik</string>
     <string name="DisableInstantCamera">Matikan kamera cepat</string>
     <string name="showSeconds">Perlihatkan waktu dalam satuan detik</string>
-    <string name="AppUpdateNekoX">Perbarui ApexGram</string>
+    <string name="AppUpdateNekoX">Perbarui Nox</string>
     <string name="NekoXUpdateTranslationHint">Tekan untuk menterjemahkan log perubahan</string>
     <string name="Name">Nama</string>
     <string name="channelAlias">Alias saluran</string>

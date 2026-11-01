@@ -47,7 +47,7 @@
     <string name="TransToLang">Zielsprache der Übersetzung</string>
     <string name="TransInputToLang">Quellsprache der Übersetzung</string>
     <string name="More">Mehr</string>
-    <string name="NekoXUpdatesChannel">ApexGram-Update-Kanal</string>
+    <string name="NekoXUpdatesChannel">Nox-Update-Kanal</string>
     <string name="ShowIdAndDc">ID/DC im Profil anzeigen</string>
     <string name="UseDefaultTheme">Standardthema verwenden*</string>
     <string name="NightMode">Nachtmodus</string>
@@ -87,9 +87,9 @@
     <string name="SortByUnmuted">Nach nicht Stummgeschalten sortieren</string>
     <string name="SortByUser">Nach Nutzern sortieren</string>
     <string name="SortByContacts">Nach Kontakten sortieren</string>
-    <string name="NekoXPushService">ApexGram-Push-Dienst</string>
-    <string name="EnablePushAlert">Bitte aktiviere den ApexGram Push-Service</string>
-    <string name="DisablePushAlert">Bitte deaktiviere den ApexGram Push-Service</string>
+    <string name="NekoXPushService">Nox-Push-Dienst</string>
+    <string name="EnablePushAlert">Bitte aktiviere den Nox Push-Service</string>
+    <string name="DisablePushAlert">Bitte deaktiviere den Nox Push-Service</string>
     <string name="DisableUndo">Rückgängig machen deaktivieren</string>
     <string name="DisableSystemAccount">Systemkonto deaktivieren</string>
     <string name="FilterMenu">Dialog Filtermenü</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Entwicklermodus deaktivieren</string>
     <string name="DeveloperSettings">Entwickleroptionen</string>
     <string name="LoginSettings">Anmeldeeinstellungen</string>
-    <string name="NekoXFaq">ApexGram FAQ</string>
+    <string name="NekoXFaq">Nox FAQ</string>
     <string name="TransSite">Plattform übersetzen</string>
     <string name="OpenKayChain">OpenPGP-Client</string>
     <string name="OpenPGPApp">OpenPGP-Anbieter</string>
@@ -267,7 +267,7 @@
     <string name="rememberAllBackMessages">Erinnere alle geklickten Antworten</string>
     <string name="DisableInstantCamera">Sofortkamera deaktivieren</string>
     <string name="showSeconds">Zeitstempel in Sekunden anzeigen</string>
-    <string name="AppUpdateNekoX">ApexGram aktualisieren</string>
+    <string name="AppUpdateNekoX">Nox aktualisieren</string>
     <string name="NekoXUpdateTranslationHint">Zum Übersetzen des Änderungsprotokolls betätigen</string>
     <string name="Name">Name</string>
     <string name="channelAlias">Kanalname</string>

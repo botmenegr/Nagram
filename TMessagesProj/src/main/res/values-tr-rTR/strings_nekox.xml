@@ -47,7 +47,7 @@
     <string name="TransToLang">Çeviri Hedef Dili</string>
     <string name="TransInputToLang">Çeviri Girişi Hedef Dili</string>
     <string name="More">Daha</string>
-    <string name="NekoXUpdatesChannel">ApexGram Güncellemeleri Kanalı</string>
+    <string name="NekoXUpdatesChannel">Nox Güncellemeleri Kanalı</string>
     <string name="ShowIdAndDc">Profilde ID / DC Değerlerini Göster</string>
     <string name="UseDefaultTheme">Varsayılan Temayı Kullan *</string>
     <string name="NightMode">Gece Modu</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">Seslilere Göre Sırala</string>
     <string name="SortByUser">Kullanıcıya Göre Sırala</string>
     <string name="SortByContacts">Kişilere Göre Sırala</string>
-    <string name="NekoXPushService">ApexGram Bildirim Hizmeti</string>
+    <string name="NekoXPushService">Nox Bildirim Hizmeti</string>
     <string name="EnablePushAlert">Lütfen \"NekoX Bildirim Hizmeti\"ni etkinleştirin</string>
     <string name="DisablePushAlert">Lütfen \"NekoX Bildirim Hizmeti\"ni devre dışı bırakın</string>
     <string name="DisableUndo">Geri Almayı Devre Dışı Bırak</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Geliştirici Modunu Devre Dışı Bırak</string>
     <string name="DeveloperSettings">Geliştirici Ayarları</string>
     <string name="LoginSettings">Giriş Ayarları</string>
-    <string name="NekoXFaq">ApexGram SSS</string>
+    <string name="NekoXFaq">Nox SSS</string>
     <string name="TransSite">Çeviri Platformu</string>
     <string name="OpenKayChain">OpenPGP İstemcisi</string>
     <string name="OpenPGPApp">OpenPGP Sağlayıcısı</string>

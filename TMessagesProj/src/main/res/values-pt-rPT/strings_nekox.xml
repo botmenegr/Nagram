@@ -45,7 +45,7 @@
     <string name="TransToLang">Idioma alvo de tradução</string>
     <string name="TransInputToLang">Idioma alvo da entrada de tradução</string>
     <string name="More">MAIS</string>
-    <string name="NekoXUpdatesChannel">Canal de Atualizações ApexGrama</string>
+    <string name="NekoXUpdatesChannel">Canal de Atualizações Noxa</string>
     <string name="ShowIdAndDc">Mostrar ID / DC no perfil</string>
     <string name="UseDefaultTheme">Usar tema padrão *</string>
     <string name="NightMode">Modo Noturno</string>
@@ -85,7 +85,7 @@
     <string name="SortByUnmuted">Classificar por Desmutado</string>
     <string name="SortByUser">Ordenar por Usuário</string>
     <string name="SortByContacts">Ordenar por contatos</string>
-    <string name="NekoXPushService">Serviço de Push ApexGrama</string>
+    <string name="NekoXPushService">Serviço de Push Noxa</string>
     <string name="EnablePushAlert">Por favor, habilite \"NekoX Push Service\"</string>
     <string name="DisablePushAlert">Por favor, desabilite \"NekoX Push Service\"</string>
     <string name="DisableUndo">Desativar Desfazer</string>
@@ -168,7 +168,7 @@
     <string name="DisableDeveloperMode">Desativar modo de desenvolvedor</string>
     <string name="DeveloperSettings">Configurações do desenvolvedor</string>
     <string name="LoginSettings">Configurações de login</string>
-    <string name="NekoXFaq">FAQ ApexGrama</string>
+    <string name="NekoXFaq">FAQ Noxa</string>
     <string name="TransSite">Plataforma de Tradução</string>
     <string name="OpenKayChain">Cliente OpenPGP</string>
     <string name="OpenPGPApp">Provedor OpenPGP</string>
@@ -262,7 +262,7 @@
     <string name="rememberAllBackMessages">Lembrar todas as respostas clicadas</string>
     <string name="DisableInstantCamera">Desativar câmera instantânea</string>
     <string name="showSeconds">Mostrar data e hora em segundos</string>
-    <string name="AppUpdateNekoX">Atualizar o ApexGrama</string>
+    <string name="AppUpdateNekoX">Atualizar o Noxa</string>
     <string name="NekoXUpdateTranslationHint">Pressione para traduzir o registro de alterações</string>
     <string name="Name">Nome:</string>
     <string name="channelAlias">Apelido do canal</string>

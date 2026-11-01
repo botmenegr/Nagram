@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">ApexGram</string>
+    <string name="NekoSettings">Nox</string>
     <string name="IPv6">Anslut med IPv6</string>
     <string name="MessageMenu">Meddelandemeny</string>
     <string name="HidePhone">Dölj mitt telefonnummer</string>
@@ -157,10 +157,10 @@
     <string name="enhancedFileLoader">Förbättra uppladdning och hämtningshastighet</string>
     <string name="mapDriftingFixForGoogleMaps">Fixa Google Maps drivande i Kina</string>
     <string name="useOSMDroidMap">Använd OSMDroid-kartan</string>
-    <string name="UnknownNekoSettingsOption">Det finns inget sådant ApexGram alternativ.</string>
+    <string name="UnknownNekoSettingsOption">Det finns inget sådant Nox alternativ.</string>
     <string name="PasscodeNeeded">Du måste aktivera lösenord lås först</string>
     <string name="PasscodeNeko">Passcode</string>
-    <string name="PasscodeShowInSettings">Visa i ApexGram</string>
+    <string name="PasscodeShowInSettings">Visa i Nox</string>
     <string name="PasscodeShowInSettingsAbout">Efter att du har gömt dig kan du **ENDAST** öppna denna sida med länk:</string>
     <string name="PasscodeSet">Ange lösenord</string>
     <string name="PasscodeEdit">Ändra lösenord</string>
@@ -204,7 +204,7 @@
     <string name="ClearRecentChats">Rensa senaste chattar</string>
     <string name="ClearRecentChatAlert">Vill du rensa dina senaste chattar?</string>
     <string name="CloudConfig">Moln inställningar</string>
-    <string name="CloudConfigDesc">Spara din ApexGram till Telegram-molnet.</string>
+    <string name="CloudConfigDesc">Spara din Nox till Telegram-molnet.</string>
     <string name="CloudConfigSyncDate">Senast synkroniserad: %s, moln: %s</string>
     <string name="CloudConfigSyncDateNever">aldrig</string>
     <string name="CloudConfigSync">Synkronisera till molnet</string>
@@ -213,7 +213,7 @@
     <string name="CloudConfigRestoreShort">Återställ</string>
     <string name="CloudConfigSyncing">Synkroniserar...</string>
     <string name="CloudConfigAutoSync">Synkronisera automatiskt</string>
-    <string name="CloudConfigAutoSyncDesc">Synkronisera till molnet automatiskt efter ändringar i ApexGram.</string>
+    <string name="CloudConfigAutoSyncDesc">Synkronisera till molnet automatiskt efter ändringar i Nox.</string>
     <string name="CloudConfigSyncFailed">Det gick inte att synkronisera inställningarna till molnet.</string>
     <string name="CloudConfigRestoreFailed">Det gick inte att återställa inställningarna från molnet.</string>
     <string name="CopyCallback">Kopiera Callback Data</string>
@@ -232,7 +232,7 @@
     <string name="PassQRNewPassword">Skydda denna QR-kod med ett lösenord</string>
     <string name="ConfirmNewPassword">Bekräfta lösenord</string>
     <string name="PassQRAbout">Sparar ditt lösenord som en krypterad QR-kod. Du kan skanna det för att logga in på en annan enhet.</string>
-    <string name="PassQREncryption">Skanna med ApexGram för att logga in.</string>
+    <string name="PassQREncryption">Skanna med Nox för att logga in.</string>
     <string name="InvalidPassQr">Invalid Passkey QR</string>
     <string name="PassQRPasswordTooShort">Lösenordet måste vara minst 8 tecken</string>
     <string name="PassQRPasswordWarning">Säkerhetsvarning: detta lösenord är det enda som skyddar din nyckel. Ett svagt lösenord kan knäckas offline, så blanda versaler, gemener, siffror och symboler.</string>
