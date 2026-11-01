@@ -65,6 +65,7 @@ public class NekoSettingsActivity extends BaseNekoSettingsActivity {
     private int passcodeRow;
     private int experimentRow;
     private int debugRow;
+    private int xrayRow;
     private int categories2Row;
 
     private int aboutRow;
@@ -105,6 +106,8 @@ public class NekoSettingsActivity extends BaseNekoSettingsActivity {
             presentFragment(new NekoPasscodeSettingsActivity());
         } else if (position == experimentRow) {
             presentFragment(new NekoExperimentalSettingsActivity());
+        } else if (position == xrayRow) {
+            tw.nekomimi.nekogram.xray.XrayCore.showDialog(getParentActivity());
         } else if (position == debugRow) {
             presentFragment(new NekoDebugSettingsActivity());
         } else if (position == channelRow) {
@@ -168,17 +171,19 @@ public class NekoSettingsActivity extends BaseNekoSettingsActivity {
             passcodeRow = -1;
         }
         experimentRow = addRow("experiment");
-        debugRow = addRow("debug");
+        xrayRow = addRow("xray");
+        debugRow = -1;
         categories2Row = addRow();
 
-        aboutRow = addRow("about");
-        channelRow = addRow("channel");
-        channelTipsRow = addRow("channelTips");
-        sourceCodeRow = addRow("sourceCode");
-        translationRow = addRow("translation");
-        datacenterRow = addRow("datacenter");
-        networkLogRow = addRow("networkLog");
-        about2Row = addRow();
+        // раздел «О Nagram» (их каналы, исходники, переводы, отладка) убран
+        aboutRow = -1;
+        channelRow = -1;
+        channelTipsRow = -1;
+        sourceCodeRow = -1;
+        translationRow = -1;
+        datacenterRow = -1;
+        networkLogRow = -1;
+        about2Row = -1;
 
         settingsRow = addRow("settings");
         importSettingsRow = addRow("importSettings");
@@ -242,6 +247,8 @@ public class NekoSettingsActivity extends BaseNekoSettingsActivity {
                         textCell.setTextAndIcon(LocaleController.getString(R.string.PasscodeNeko), R.drawable.msg_secret, divider);
                     } else if (position == experimentRow) {
                         textCell.setTextAndIcon(LocaleController.getString(R.string.Experiment), R.drawable.msg_fave, divider);
+                    } else if (position == xrayRow) {
+                        textCell.setTextAndIcon("Xray (VLESS / подписка)", R.drawable.msg_secret, divider);
                     } else if (position == debugRow) {
                         textCell.setTextAndIcon(LocaleController.getString(R.string.DebugMenu), R.drawable.msg_info, divider);
                     }

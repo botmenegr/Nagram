@@ -47,7 +47,7 @@
     <string name="TransToLang">翻譯目標語言</string>
     <string name="TransInputToLang">輸入翻譯目標語言</string>
     <string name="More">更多</string>
-    <string name="NekoXUpdatesChannel">Nagram 更新頻道</string>
+    <string name="NekoXUpdatesChannel">ApexGram 更新頻道</string>
     <string name="ShowIdAndDc">在個人資料中顯示 ID/ DC</string>
     <string name="UseDefaultTheme">使用預設主題 *</string>
     <string name="NightMode">夜間模式</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">可通知優先排序</string>
     <string name="SortByUser">使用者優先排序</string>
     <string name="SortByContacts">聯絡人優先排序</string>
-    <string name="NekoXPushService">Nagram 通知服務</string>
+    <string name="NekoXPushService">ApexGram 通知服務</string>
     <string name="EnablePushAlert">請啟用「NekoX 通知服務」</string>
     <string name="DisablePushAlert">請禁用「NekoX 通知服務」</string>
     <string name="DisableUndo">禁用五秒內後悔</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">禁用開發者模式</string>
     <string name="DeveloperSettings">開發者設定</string>
     <string name="LoginSettings">登入設定</string>
-    <string name="NekoXFaq">Nagram 常見問題</string>
+    <string name="NekoXFaq">ApexGram 常見問題</string>
     <string name="TransSite">翻譯平臺</string>
     <string name="OpenKayChain">OpenPGP 客戶端</string>
     <string name="OpenPGPApp">OpenPGP 提供應用</string>
@@ -267,7 +267,7 @@
     <string name="rememberAllBackMessages">記住所有點選的回覆</string>
     <string name="DisableInstantCamera">禁用相機即時預覽</string>
     <string name="showSeconds">以秒為單位顯示時間戳</string>
-    <string name="AppUpdateNekoX">更新 Nagram</string>
+    <string name="AppUpdateNekoX">更新 ApexGram</string>
     <string name="NekoXUpdateTranslationHint">長按以翻譯更新日誌</string>
     <string name="Name">輸入別名</string>
     <string name="channelAlias">頻道別名</string>

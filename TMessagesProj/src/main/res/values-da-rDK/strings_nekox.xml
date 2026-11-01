@@ -45,7 +45,7 @@
     <string name="TransToLang">Oversættelses målsprog</string>
     <string name="TransInputToLang">Oversættelsens inputsprog</string>
     <string name="More">Mere</string>
-    <string name="NekoXUpdatesChannel">Nagram Opdateringer Kanal</string>
+    <string name="NekoXUpdatesChannel">ApexGram Opdateringer Kanal</string>
     <string name="ShowIdAndDc">Vis ID / DC i profil</string>
     <string name="UseDefaultTheme">Brug standardtema *</string>
     <string name="NightMode">Nattilstand</string>
@@ -85,7 +85,7 @@
     <string name="SortByUnmuted">Sortér Efter Unmuted</string>
     <string name="SortByUser">Sortér Efter Bruger</string>
     <string name="SortByContacts">Sortér Efter Kontakter</string>
-    <string name="NekoXPushService">Nagram Push-tjeneste</string>
+    <string name="NekoXPushService">ApexGram Push-tjeneste</string>
     <string name="EnablePushAlert">Aktivér venligst \"NekoX Push Service\"</string>
     <string name="DisablePushAlert">Deaktivér venligst \"NekoX Push Service\"</string>
     <string name="DisableUndo">Deaktivér Fortryd</string>
@@ -168,7 +168,7 @@
     <string name="DisableDeveloperMode">Deaktivér Udviklertilstand</string>
     <string name="DeveloperSettings">Udvikler Indstillinger</string>
     <string name="LoginSettings">Log Ind Indstillinger</string>
-    <string name="NekoXFaq">OSS Om Nagram</string>
+    <string name="NekoXFaq">OSS Om ApexGram</string>
     <string name="TransSite">Oversæt Platform</string>
     <string name="OpenKayChain">Openpgp- Klient</string>
     <string name="OpenPGPApp">Openpgp- Leverandør</string>
@@ -262,7 +262,7 @@
     <string name="rememberAllBackMessages">Husk alle klikkede svar</string>
     <string name="DisableInstantCamera">Deaktivér øjeblikkeligt kamera</string>
     <string name="showSeconds">Vis tidsstempel i sekunder</string>
-    <string name="AppUpdateNekoX">Opdater Nagram</string>
+    <string name="AppUpdateNekoX">Opdater ApexGram</string>
     <string name="NekoXUpdateTranslationHint">Tryk for at oversætte ændringsloggen</string>
     <string name="Name">Navn</string>
     <string name="channelAlias">Kanal alias</string>

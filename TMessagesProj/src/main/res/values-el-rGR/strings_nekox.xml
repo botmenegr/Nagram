@@ -47,7 +47,7 @@
     <string name="TransToLang">Μετάφραση σε</string>
     <string name="TransInputToLang">Μετάφραση από</string>
     <string name="More">Περισσότερα</string>
-    <string name="NekoXUpdatesChannel">Κανάλι ενημερώσεων Nagram</string>
+    <string name="NekoXUpdatesChannel">Κανάλι ενημερώσεων ApexGram</string>
     <string name="ShowIdAndDc">Εμφάνιση ID / DC στο προφίλ</string>
     <string name="UseDefaultTheme">Χρήση προεπιλεγμένου θέματος *</string>
     <string name="NightMode">Νυχτερινή λειτουργία</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">Κατά Μη σε Σίγαση</string>
     <string name="SortByUser">Ταξινόμηση κατά χρήστη</string>
     <string name="SortByContacts">Ταξινόμηση κατά επαφές</string>
-    <string name="NekoXPushService">Υπηρεσία Nagram Push</string>
+    <string name="NekoXPushService">Υπηρεσία ApexGram Push</string>
     <string name="EnablePushAlert">Ενεργ/στε την υπηρεσία προώθησης NekoX</string>
     <string name="DisablePushAlert">Απενεργ/στε την υπηρεσία προώθησης NekoX</string>
     <string name="DisableUndo">Απενεργ/ση αναίρεσης</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Απενεργ/ση λειτουργίας προγραμματιστή</string>
     <string name="DeveloperSettings">Ρυθμίσεις προγραμματιστή</string>
     <string name="LoginSettings">Ρυθμίσεις σύνδεσης</string>
-    <string name="NekoXFaq">Συχνές ερωτήσεις Nagram</string>
+    <string name="NekoXFaq">Συχνές ερωτήσεις ApexGram</string>
     <string name="TransSite">Πλατφόρμα Μετάφρασης</string>
     <string name="OpenKayChain">Πελάτης OpenPGP</string>
     <string name="OpenPGPApp">Πάροχος OpenPGP</string>

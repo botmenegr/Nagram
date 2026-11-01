@@ -45,7 +45,7 @@
     <string name="TransToLang">Käännöksen kohdekieli</string>
     <string name="TransInputToLang">Käännössyötteen kohteen kieli</string>
     <string name="More">Lisää</string>
-    <string name="NekoXUpdatesChannel">Nagram Päivitykset Kanava</string>
+    <string name="NekoXUpdatesChannel">ApexGram Päivitykset Kanava</string>
     <string name="ShowIdAndDc">Näytä profiili ID / DC</string>
     <string name="UseDefaultTheme">Käytä oletusteemaa *</string>
     <string name="NightMode">Yötila</string>
@@ -85,7 +85,7 @@
     <string name="SortByUnmuted">Lajittele Mykistämättömien Mukaan</string>
     <string name="SortByUser">Järjestä Käyttäjän Mukaan</string>
     <string name="SortByContacts">Järjestä Yhteystietojen Mukaan</string>
-    <string name="NekoXPushService">Nagram Push Service</string>
+    <string name="NekoXPushService">ApexGram Push Service</string>
     <string name="EnablePushAlert">Ota käyttöön \"NekoX Push Service\"</string>
     <string name="DisablePushAlert">Poista \"NekoX Push Service\" käytöstä</string>
     <string name="DisableUndo">Poista Peruminen Käytöstä</string>
@@ -168,7 +168,7 @@
     <string name="DisableDeveloperMode">Poista Kehittäjätila Käytöstä</string>
     <string name="DeveloperSettings">Kehittäjän Asetukset</string>
     <string name="LoginSettings">Kirjautumisasetukset</string>
-    <string name="NekoXFaq">Nagramin UKK</string>
+    <string name="NekoXFaq">ApexGramin UKK</string>
     <string name="TransSite">Käännä Alusta</string>
     <string name="OpenKayChain">Openpgp- Asiakas</string>
     <string name="OpenPGPApp">OpenPGP Tarjoaja</string>
@@ -262,7 +262,7 @@
     <string name="rememberAllBackMessages">Muista kaikki klikkatut vastaukset</string>
     <string name="DisableInstantCamera">Poista pikakamera käytöstä</string>
     <string name="showSeconds">Näytä aikaleima sekunneissa</string>
-    <string name="AppUpdateNekoX">Päivitä Nagram</string>
+    <string name="AppUpdateNekoX">Päivitä ApexGram</string>
     <string name="NekoXUpdateTranslationHint">Paina kääntääksesi muutoslokin</string>
     <string name="Name">Nimi</string>
     <string name="channelAlias">Kanavan alias</string>

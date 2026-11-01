@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="N_Config">N-конфігурації</string>
+    <string name="N_Config">ApexGram</string>
     <string name="ForceCopy">Примусова копія</string>
     <string name="disableSecondAddress">Вимкнути другий адресний запит</string>
     <string name="InvertReply">Invert</string>
@@ -95,7 +95,7 @@
     <string name="ShowForumAsNormalChat">Показувати форум як звичайний чат</string>
     <string name="DecorationNone">Без ефекту</string>
     <string name="ChatDecoration">Прикраса Чату</string>
-    <string name="NeedChangeNekoSettings">Необхідно змінити параметри N-Config</string>
+    <string name="NeedChangeNekoSettings">Необхідно змінити параметри ApexGram</string>
     <string name="DoNotUnarchiveBySwipe">Зробити не архівування свайпом</string>
     <string name="DoNotShareMyPhoneNumber">Не ділитися моїм номером телефону</string>
     <string name="DefaultDeleteMenu">Видалити меню за замовчуванням</string>

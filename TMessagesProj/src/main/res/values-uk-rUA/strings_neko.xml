@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">N-конфігурації</string>
+    <string name="NekoSettings">ApexGram</string>
     <string name="IPv6">Підключення через IPv6</string>
     <string name="MessageMenu">Меню повідомлень</string>
     <string name="HidePhone">Сховати мій номер телефону</string>
@@ -213,7 +213,7 @@
     <string name="CloudConfigRestoreShort">Відновити</string>
     <string name="CloudConfigSyncing">Синхронізація...</string>
     <string name="CloudConfigAutoSync">Автоматична синхронізація</string>
-    <string name="CloudConfigAutoSyncDesc">Автоматично синхронізувати з хмарою після внесення змін до N-Config.</string>
+    <string name="CloudConfigAutoSyncDesc">Автоматично синхронізувати з хмарою після внесення змін до ApexGram.</string>
     <string name="CloudConfigSyncFailed">Не вдалося синхронізувати налаштування до хмари.</string>
     <string name="CloudConfigRestoreFailed">Не вдалося відновити настройки з хмари.</string>
     <string name="CopyCallback">Копіювати вхідні дані</string>

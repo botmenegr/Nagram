@@ -45,7 +45,7 @@
     <string name="TransToLang">Vertaal doeltaal</string>
     <string name="TransInputToLang">Vertaling invoer doeltaal</string>
     <string name="More">Meer</string>
-    <string name="NekoXUpdatesChannel">Nagram update kanaal</string>
+    <string name="NekoXUpdatesChannel">ApexGram update kanaal</string>
     <string name="ShowIdAndDc">Toon ID / DC in profiel</string>
     <string name="UseDefaultTheme">Gebruik standaard thema *</string>
     <string name="NightMode">Nacht modus</string>
@@ -85,7 +85,7 @@
     <string name="SortByUnmuted">Sorteer op ongedempt</string>
     <string name="SortByUser">Sorteren op gebruiker</string>
     <string name="SortByContacts">Sorteren op contacten</string>
-    <string name="NekoXPushService">Nagram push-service</string>
+    <string name="NekoXPushService">ApexGram push-service</string>
     <string name="EnablePushAlert">Activeer de \"NekoX Push Service\"</string>
     <string name="DisablePushAlert">Schakel alstublieft \"NekoX Push Service\" uit</string>
     <string name="DisableUndo">Uitschakelen ongedaan maken</string>
@@ -168,7 +168,7 @@
     <string name="DisableDeveloperMode">Ontwikkelaarsmodus uitschakelen</string>
     <string name="DeveloperSettings">Ontwikkelaar Instellingen</string>
     <string name="LoginSettings">Login instellingen</string>
-    <string name="NekoXFaq">Nagram FAQ</string>
+    <string name="NekoXFaq">ApexGram FAQ</string>
     <string name="TransSite">Vertaal Platform</string>
     <string name="OpenKayChain">OpenPGP-client</string>
     <string name="OpenPGPApp">OpenPGP Provider</string>
@@ -262,7 +262,7 @@
     <string name="rememberAllBackMessages">Onthoud alle geklikt antwoorden</string>
     <string name="DisableInstantCamera">Schakel directe camera uit</string>
     <string name="showSeconds">Tijdstempel in seconden weergeven</string>
-    <string name="AppUpdateNekoX">Nagram bijwerken</string>
+    <string name="AppUpdateNekoX">ApexGram bijwerken</string>
     <string name="NekoXUpdateTranslationHint">Klik om de veranderingenlog te vertalen</string>
     <string name="Name">naam</string>
     <string name="channelAlias">Kanaal alias</string>

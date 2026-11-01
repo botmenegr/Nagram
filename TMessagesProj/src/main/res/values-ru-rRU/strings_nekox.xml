@@ -47,7 +47,7 @@
     <string name="TransToLang">Язык перевода</string>
     <string name="TransInputToLang">Переводить с</string>
     <string name="More">Ещё</string>
-    <string name="NekoXUpdatesChannel">Канал обновлений Nagram</string>
+    <string name="NekoXUpdatesChannel">Канал обновлений ApexGram</string>
     <string name="ShowIdAndDc">Отображать ID и DC в профиле</string>
     <string name="UseDefaultTheme">Использовать тему по умолчанию *</string>
     <string name="NightMode">Ночной режим</string>
@@ -87,7 +87,7 @@
     <string name="SortByUnmuted">Сначала со звуком</string>
     <string name="SortByUser">Сначала личные</string>
     <string name="SortByContacts">Сначала контакты</string>
-    <string name="NekoXPushService">Сервис уведомлений Nagram</string>
+    <string name="NekoXPushService">Сервис уведомлений ApexGram</string>
     <string name="EnablePushAlert">Включите сервис уведомлений</string>
     <string name="DisablePushAlert">Отключите сервис уведомлений</string>
     <string name="DisableUndo">Скрыть отмену действий</string>
@@ -170,7 +170,7 @@
     <string name="DisableDeveloperMode">Отключить режим разработчика</string>
     <string name="DeveloperSettings">Настройки разработчика</string>
     <string name="LoginSettings">Настройки входа</string>
-    <string name="NekoXFaq">ЧаВО Nagram (EN/CH)</string>
+    <string name="NekoXFaq">ЧаВО ApexGram (EN/CH)</string>
     <string name="TransSite">Платформа переводов</string>
     <string name="OpenKayChain">OpenPGP</string>
     <string name="OpenPGPApp">Провайдер OpenPGP</string>
@@ -267,7 +267,7 @@
     <string name="rememberAllBackMessages">Запомнить все нажатые ответы</string>
     <string name="DisableInstantCamera">Скрыть превью с камеры в панели «Прикрепить»</string>
     <string name="showSeconds">Время с секундами</string>
-    <string name="AppUpdateNekoX">Обновить Nagram</string>
+    <string name="AppUpdateNekoX">Обновить ApexGram</string>
     <string name="NekoXUpdateTranslationHint">Нажмите, чтобы перевести журнал изменений</string>
     <string name="Name">Имя</string>
     <string name="channelAlias">Свои личные сообщения для сообщений от каналов</string>

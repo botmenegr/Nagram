@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="NekoSettings">Switch to @Cherry_gram</string>
+    <string name="NekoSettings">ApexGram</string>
     <string name="IPv6">Yhdistetään IPv6:n kautta</string>
     <string name="MessageMenu">Viestivalikko</string>
     <string name="HidePhone">Piilota puhelinnumeroni</string>
@@ -157,10 +157,10 @@
     <string name="enhancedFileLoader">Paranna lataus- ja latausnopeutta</string>
     <string name="mapDriftingFixForGoogleMaps">Korjaa Google Maps ajautuminen Kiinassa</string>
     <string name="useOSMDroidMap">Käytä OSMDroid-karttaa</string>
-    <string name="UnknownNekoSettingsOption">Tällaista N-Config vaihtoehtoa ei ole.</string>
+    <string name="UnknownNekoSettingsOption">Tällaista ApexGram vaihtoehtoa ei ole.</string>
     <string name="PasscodeNeeded">Sinun täytyy ottaa pääsykoodin lukitus käyttöön ensin</string>
     <string name="PasscodeNeko">Passcode</string>
-    <string name="PasscodeShowInSettings">Näytä N-Config</string>
+    <string name="PasscodeShowInSettings">Näytä ApexGram</string>
     <string name="PasscodeShowInSettingsAbout">Piilon jälkeen voit **VAIN ** avata tämän sivun linkillä:</string>
     <string name="PasscodeSet">Aseta salasana</string>
     <string name="PasscodeEdit">Vaihda salasanaa</string>
@@ -213,7 +213,7 @@
     <string name="CloudConfigRestoreShort">Palauta</string>
     <string name="CloudConfigSyncing">Synkronoi...</string>
     <string name="CloudConfigAutoSync">Automaattinen synkronointi</string>
-    <string name="CloudConfigAutoSyncDesc">Synkronoi pilveen automaattisesti, kun N-Config on muutettu.</string>
+    <string name="CloudConfigAutoSyncDesc">Synkronoi pilveen automaattisesti, kun ApexGram on muutettu.</string>
     <string name="CloudConfigSyncFailed">Asetusten synkronointi pilveen epäonnistui.</string>
     <string name="CloudConfigRestoreFailed">Asetusten palautus pilvestä epäonnistui.</string>
     <string name="CopyCallback">Kopioi Takaisinsoiton Tiedot</string>
@@ -232,7 +232,7 @@
     <string name="PassQRNewPassword">Suojaa tämä QR-koodi salasanalla</string>
     <string name="ConfirmNewPassword">Vahvista Salasana</string>
     <string name="PassQRAbout">Tallentaa salasanasi salatuksi QR-koodiksi. Voit skannata sen kirjautuaksesi sisään toisella laitteella.</string>
-    <string name="PassQREncryption">Skannaa Nagrammilla kirjautuaksesi sisään.</string>
+    <string name="PassQREncryption">Skannaa ApexGrammilla kirjautuaksesi sisään.</string>
     <string name="InvalidPassQr">Invalid Passkey QR</string>
     <string name="PassQRPasswordTooShort">Salasanan tulee olla vähintään 8 merkkiä pitkä</string>
     <string name="PassQRPasswordWarning">Turvallisuusvaroitus: tämä salasana on ainoa avainta suojaava asia. Heikko salasana voidaan säröillä offline-tilassa, joten sekoita isoja kirjaimia, numeroita ja symboleja.</string>

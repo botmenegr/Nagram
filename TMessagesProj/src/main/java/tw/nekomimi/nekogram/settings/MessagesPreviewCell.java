@@ -147,7 +147,7 @@ public class MessagesPreviewCell extends LinearLayout {
 
         TimeStringHelper.getForwardsDrawable();
         for (int i = 0; i < cells.length; i++) {
-            messages[i].customName = "Nagram";
+            messages[i].customName = "ApexGram";
             messages[i].forceAvatar = true;
             cells[i] = new ChatMessageCell(context, account) {
                 @Override
