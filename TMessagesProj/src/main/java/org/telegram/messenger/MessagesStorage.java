@@ -3288,6 +3288,9 @@ public class MessagesStorage extends BaseController {
                 SparseArray<MessagesController.DialogFilter> filtersToDelete = new SparseArray<>();
                 for (int a = 0, N = dialogFilters.size(); a < N; a++) {
                     MessagesController.DialogFilter filter = dialogFilters.get(a);
+                    if (tw.nekomimi.nekogram.folder.LocalFolders.isLocal(filter.id)) {
+                        continue; // локальные папки сервер не присылает — не удаляем их
+                    }
                     filtersToDelete.put(filter.id, filter);
                 }
                 ArrayList<Integer> filtersOrder = new ArrayList<>();
@@ -3617,9 +3620,33 @@ public class MessagesStorage extends BaseController {
             anythingChanged = true;
         }
         boolean orderChanged = false;
+        // Порядок: серверные папки — как прислал сервер, локальные остаются на своих местах.
+        // Идём по текущему списку: место локальной папки сохраняем, места серверных
+        // заполняем по порядку сервера.
+        ArrayList<Integer> mergedOrder = new ArrayList<>();
+        {
+            ArrayList<Integer> serverQueue = new ArrayList<>();
+            for (Integer id : filtersOrder) {
+                if (dialogFiltersMap.get(id) != null) serverQueue.add(id);
+            }
+            int q = 0;
+            ArrayList<MessagesController.DialogFilter> current = new ArrayList<>(dialogFilters);
+            Collections.sort(current, (o1, o2) -> Integer.compare(o1.order, o2.order));
+            for (int a = 0, N = current.size(); a < N; a++) {
+                MessagesController.DialogFilter f = current.get(a);
+                if (tw.nekomimi.nekogram.folder.LocalFolders.isLocal(f.id)) {
+                    mergedOrder.add(f.id);
+                } else if (q < serverQueue.size()) {
+                    mergedOrder.add(serverQueue.get(q++));
+                }
+            }
+            while (q < serverQueue.size()) {
+                mergedOrder.add(serverQueue.get(q++));
+            }
+        }
         for (int a = 0, N = dialogFilters.size(); a < N; a++) {
             MessagesController.DialogFilter filter = dialogFilters.get(a);
-            int order = filtersOrder.indexOf(filter.id);
+            int order = mergedOrder.indexOf(filter.id);
             if (filter.order != order) {
                 filter.order = order;
                 anythingChanged = true;

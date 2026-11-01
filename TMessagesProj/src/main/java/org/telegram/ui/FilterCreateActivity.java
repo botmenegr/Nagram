@@ -198,10 +198,7 @@ public class FilterCreateActivity extends BaseFragment {
         filter = dialogFilter;
         if (filter == null) {
             filter = new MessagesController.DialogFilter();
-            filter.id = 2;
-            while (getMessagesController().dialogFiltersById.get(filter.id) != null) {
-                filter.id++;
-            }
+            filter.id = tw.nekomimi.nekogram.folder.LocalFolders.newFilterId(getMessagesController(), currentAccount);
             filter.name = "";
             filter.color = (int) (Math.random() * 8);
             creatingNew = true;
@@ -370,7 +367,10 @@ public class FilterCreateActivity extends BaseFragment {
             items.add(ItemInner.asShadow(LocaleController.getString(R.string.FolderTagColorInfo)));
         }
 
-        if (invites.isEmpty()) {
+        if (tw.nekomimi.nekogram.folder.LocalFolders.isLocal(filter)) {
+            // локальная папка: делиться ссылкой нельзя, сервер про неё не знает
+            items.add(ItemInner.asShadow("Локальная папка — хранится только на этом устройстве и не синхронизируется."));
+        } else if (invites.isEmpty()) {
             items.add(ItemInner.asHeader(LocaleController.getString(R.string.FilterShareFolder), true));
             items.add(ItemInner.asButton(R.drawable.msg2_link2, LocaleController.getString(R.string.FilterShareFolderButton), false));
             items.add(ItemInner.asShadow(LocaleController.getString(R.string.FilterInviteLinksHintNew)));
@@ -876,6 +876,7 @@ public class FilterCreateActivity extends BaseFragment {
         ArrayList<Long> arrayList = include ? newAlwaysShow : newNeverShow;
         UsersSelectActivity fragment = new UsersSelectActivity(include, arrayList, newFilterFlags);
         fragment.noChatTypes = filter.isChatlist();
+        fragment.noLimit = tw.nekomimi.nekogram.folder.LocalFolders.isLocal(filter);
         fragment.setDelegate((ids, flags) -> {
             newFilterFlags = flags;
             if (include) {

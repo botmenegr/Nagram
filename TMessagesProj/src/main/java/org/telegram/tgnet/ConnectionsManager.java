@@ -502,6 +502,9 @@ public class ConnectionsManager extends BaseController {
                 TL_account.updateStatus status = (TL_account.updateStatus) object;
                 status.offline = true;  // 将在线状态改为离线
             }
+            if (tw.nekomimi.nekogram.folder.LocalFolders.intercept(object, onCompleteOrig, onCompleteTimestamp)) {
+                return;
+            }
             if (!ayuGhostShouldSend(object)) {
                 return;
             }

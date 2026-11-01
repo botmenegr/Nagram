@@ -713,7 +713,7 @@ object NaConfig {
         addConfig(
             "ShowHiddenFeature",
             ConfigItem.configTypeBool,
-            false
+            true
         )
     val searchHashtagDefaultPageChannel =
         addConfig(

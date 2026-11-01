@@ -899,7 +899,14 @@ public class MessagesController extends BaseController implements NotificationCe
 
     public void lockFiltersInternal() {
         boolean changed = false;
-        if (!getUserConfig().isPremium() && dialogFilters.size() - 1 > dialogFiltersLimitDefault) {
+        // без замков: лишние папки не блокируем (сверх лимита они локальные)
+        for (int i = 0; i < dialogFilters.size(); i++) {
+            if (dialogFilters.get(i).locked) {
+                dialogFilters.get(i).locked = false;
+                changed = true;
+            }
+        }
+        if (false) {
             int n = dialogFilters.size() - 1 - dialogFiltersLimitDefault;
             ArrayList<DialogFilter> filtersSortedById = new ArrayList<>(dialogFilters);
             Collections.reverse(filtersSortedById);

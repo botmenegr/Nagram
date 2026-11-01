@@ -593,13 +593,11 @@ public class FiltersSetupActivity extends BaseFragment implements NotificationCe
             }
             filtersSectionEnd = items.size();
 
-            if (listView != null) listView.forcedSections.add(AndroidUtilities.pack(filtersSectionStart, filtersSectionEnd - 1 + (dialogFilters.size() < getMessagesController().dialogFiltersLimitPremium ? 1 : 0)));
+            if (listView != null) listView.forcedSections.add(AndroidUtilities.pack(filtersSectionStart, filtersSectionEnd - 1 + 1));
         } else {
             filtersSectionStart = filtersSectionEnd = -1;
         }
-        if (dialogFilters.size() < getMessagesController().dialogFiltersLimitPremium) {
-            items.add(ItemInner.asButton(LocaleController.getString(R.string.CreateNewFilter)));
-        }
+        items.add(ItemInner.asButton(LocaleController.getString(R.string.CreateNewFilter)));
         items.add(ItemInner.asShadow(null));
         folderTagsPosition = items.size();
         showTagsRow = items.size();
@@ -737,13 +735,8 @@ public class FiltersSetupActivity extends BaseFragment implements NotificationCe
     }
 
     public void createFolder(INavigationLayout navigationLayout) {
-        final int count = getMessagesController().getDialogFilters().size();
-        if (
-            count - 1 >= getMessagesController().dialogFiltersLimitDefault && !getUserConfig().isPremium() ||
-            count >= getMessagesController().dialogFiltersLimitPremium
-        ) {
-            showDialog(new LimitReachedBottomSheet(this, getContext(), LimitReachedBottomSheet.TYPE_FOLDERS, currentAccount, null));
-        } else if (navigationLayout != null) {
+        // лимита нет: сверх серверного лимита папка создаётся локальной
+        if (navigationLayout != null) {
             navigationLayout.presentFragment(new FilterCreateActivity());
         }
     }
@@ -989,10 +982,7 @@ public class FiltersSetupActivity extends BaseFragment implements NotificationCe
                         MessagesController.DialogFilter filter = new MessagesController.DialogFilter();
                         filter.name = suggested.filter.title.text;
                         filter.entities = suggested.filter.title.entities;
-                        filter.id = 2;
-                        while (getMessagesController().dialogFiltersById.get(filter.id) != null) {
-                            filter.id++;
-                        }
+                        filter.id = tw.nekomimi.nekogram.folder.LocalFolders.newFilterId(getMessagesController(), currentAccount);
                         filter.order = getMessagesController().getDialogFilters().size();
                         filter.pendingUnreadCount = filter.unreadCount = -1;
                         for (int b = 0; b < 2; b++) {
