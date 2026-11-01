@@ -75,7 +75,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: out/libv2ray.aar
-          key: xraylite-${{ env.XRAYLITE_REF }}-v1
+          key: xraylite-${{ env.XRAYLITE_REF }}-v2
       - name: Checkout AndroidLibXrayLite
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
@@ -107,7 +107,7 @@ jobs:
           cd xlite
           gomobile init
           go mod download
-          gomobile bind -v -target android/arm64,android/arm -androidapi 24 -trimpath \
+          gomobile bind -v -target android/arm64,android/arm -androidapi 23 -trimpath \
             -ldflags='-s -w -buildid= -checklinkname=0' -o ../out/libv2ray.aar ./
           ls -la ../out
       - uses: actions/upload-artifact@v4
