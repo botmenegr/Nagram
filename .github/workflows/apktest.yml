@@ -3,6 +3,8 @@ on:
   push:
     branches: [ci-apktest]
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,8 +32,11 @@ jobs:
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           script: bash .github/apktest/run.sh
-      - uses: actions/upload-artifact@v4
+      - name: Publish results
         if: always()
-        with:
-          name: apktest
-          path: out/
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out && zip -qr ../apktest.zip . && cd ..
+          T=apktest-${{ github.run_number }}
+          gh release create "$T" apktest.zip -R ${{ github.repository }} --prerelease --target ci-apktest -t "$T" -n "emulator test"

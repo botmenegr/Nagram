@@ -26,3 +26,6 @@ adb shell ls -la /data/anr/ > out/anr_ls.txt
 adb pull /data/anr out/anr || true
 adb shell dumpsys activity processes > out/processes.txt
 true
+echo "===== ACTIVITY ====="; cat out/activity_*.txt
+echo "===== CRASH ====="; cat out/crash.txt
+echo "===== ANR LS ====="; cat out/anr_ls.txt
