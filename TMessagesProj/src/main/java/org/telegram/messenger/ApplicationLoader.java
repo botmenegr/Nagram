@@ -367,6 +367,12 @@ public class ApplicationLoader extends Application {
 
         AnalyticsHelper.start(this);
 
+        try {
+            tw.nekomimi.nekogram.xray.XrayCore.autoStart();
+        } catch (Throwable e) {
+            FileLog.e(e);
+        }
+
         new ForegroundDetector(this) {
             @Override
             public void onActivityStarted(Activity activity) {

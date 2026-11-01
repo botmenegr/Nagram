@@ -108,3 +108,8 @@
 -keep class * implements com.google.gson.TypeAdapterFactory
 -keep class * implements com.google.gson.JsonSerializer
 -keep class * implements com.google.gson.JsonDeserializer
+
+# Xray core (gomobile)
+-keep class libv2ray.** { *; }
+-keep class go.** { *; }
+-keep class tw.nekomimi.nekogram.xray.** { *; }

@@ -422,6 +422,7 @@ dependencies {
     implementation project(":openpgp-api")
 
     compileOnly fileTree("libs")
+    implementation files('xraylib/libv2ray.aar')
 
     // add for undo and redo
     implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:6.1'

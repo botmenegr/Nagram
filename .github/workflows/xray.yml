@@ -1,0 +1,172 @@
+name: Build APK (Xray)
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  NDK_VER: 27.2.12479018
+  XRAYLITE_REPO: https://github.com/2dust/AndroidLibXrayLite
+  XRAYLITE_REF: 2ffe5f794a32ba15b122e177b5acffc6f11c4959
+
+jobs:
+  native:
+    name: Native (${{ matrix.flavor }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        flavor:
+          - armeabi-v7a
+          - arm64-v8a
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Status
+        run: sed -i 's/\/\///g' settings.gradle
+      - name: Native Cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: TMessagesProj/src/main/libs
+          key: ${{ hashFiles('TMessagesProj/jni/**') }}-${{ matrix.flavor }}
+      - name: Submodules
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: git submodule update --init
+      - uses: actions/setup-java@v4
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - uses: android-actions/setup-android@v3
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          packages: 'platform-tools'
+      - name: Install NDK
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          echo "y" | sdkmanager --install "ndk;${NDK_VER}" --sdk_root=${ANDROID_SDK_ROOT} &> /dev/null
+          echo "sdk.dir=${ANDROID_HOME}" > local.properties
+          echo "ndk.dir=${ANDROID_HOME}/ndk/${NDK_VER}" >> local.properties
+      - name: Native Build
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          export NATIVE_TARGET="${{ matrix.flavor }}"
+          ./run init libs
+          ./run libs native
+
+  xray:
+    name: Xray core (aar)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Xray Cache
+        id: cache
+        uses: actions/cache@v4
+        with:
+          path: out/libv2ray.aar
+          key: xraylite-${{ env.XRAYLITE_REF }}-v1
+      - name: Checkout AndroidLibXrayLite
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          git clone ${XRAYLITE_REPO} xlite
+          cd xlite && git checkout ${XRAYLITE_REF}
+      - uses: actions/setup-go@v5
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          go-version-file: xlite/go.mod
+          cache: false
+      - uses: actions/setup-java@v4
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - uses: android-actions/setup-android@v3
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          packages: 'platform-tools platforms;android-34'
+      - name: Build aar
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          echo "y" | sdkmanager --install "ndk;${NDK_VER}" --sdk_root=${ANDROID_SDK_ROOT} &> /dev/null
+          export ANDROID_NDK_HOME=${ANDROID_HOME}/ndk/${NDK_VER}
+          go install golang.org/x/mobile/cmd/gomobile@latest
+          go install golang.org/x/mobile/cmd/gobind@latest
+          export PATH=$PATH:$(go env GOPATH)/bin
+          cd xlite
+          gomobile init
+          go mod download
+          gomobile bind -v -target android/arm64,android/arm -androidapi 24 -trimpath \
+            -ldflags='-s -w -buildid= -checklinkname=0' -o ../out/libv2ray.aar ./
+          ls -la ../out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libv2ray
+          path: out/libv2ray.aar
+
+  build:
+    name: Gradle Build
+    runs-on: ubuntu-latest
+    needs: [native, xray]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Status
+        run: sed -i 's/\/\///g' settings.gradle
+      - name: Native Cache (armeabi-v7a)
+        uses: actions/cache@v4
+        with:
+          path: TMessagesProj/src/main/libs
+          key: ${{ hashFiles('TMessagesProj/jni/**') }}-armeabi-v7a
+      - name: Native Cache (arm64-v8a)
+        uses: actions/cache@v4
+        with:
+          path: TMessagesProj/src/main/libs
+          key: ${{ hashFiles('TMessagesProj/jni/**') }}-arm64-v8a
+      - uses: actions/download-artifact@v4
+        with:
+          name: libv2ray
+          path: TMessagesProj/xraylib
+      - name: Submodules
+        run: git submodule update --init
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
+      - name: Install NDK
+        run: |
+          echo "y" | sdkmanager --install "ndk;${NDK_VER}" --sdk_root=${ANDROID_SDK_ROOT} &> /dev/null
+          echo "sdk.dir=${ANDROID_HOME}" > local.properties
+          echo "ndk.dir=${ANDROID_HOME}/ndk/${NDK_VER}" >> local.properties
+      - name: Configure Gradle
+        run: sed -i "s/2000000000000/$(date +%s%N | cut -c1-13)/g" gradle.properties
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
+      - name: Build APK
+        run: |
+          ls -la TMessagesProj/xraylib
+          export KEYSTORE_PASS=apexgram123
+          export ALIAS_NAME=apexgram
+          export ALIAS_PASS=apexgram123
+          ./gradlew TMessagesProj:assembleRelease --build-cache --no-configuration-cache
+          find TMessagesProj/build/outputs/apk -name '*.apk'
+          mkdir -p dist
+          find TMessagesProj/build/outputs/apk -name '*.apk' -exec cp {} dist/ \;
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: dist/*.apk
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Build ${{ github.run_number }}
+          make_latest: true
+          files: dist/*.apk
