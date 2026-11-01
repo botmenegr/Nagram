@@ -20,6 +20,7 @@ jobs:
   native:
     name: Native (${{ matrix.flavor }})
     runs-on: ubuntu-latest
+    needs: [xray]
     strategy:
       matrix:
         flavor:
@@ -35,6 +36,11 @@ jobs:
         with:
           path: TMessagesProj/src/main/libs
           key: ${{ hashFiles('TMessagesProj/jni/**') }}-${{ matrix.flavor }}
+      - uses: actions/download-artifact@v4
+        if: steps.cache.outputs.cache-hit != 'true'
+        with:
+          name: libv2ray
+          path: TMessagesProj/xraylib
       - name: Submodules
         if: steps.cache.outputs.cache-hit != 'true'
         run: git submodule update --init
